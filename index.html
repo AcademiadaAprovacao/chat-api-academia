@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat da Academia da Aprovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>❓ Perguntas rápidas</h2>
+        <ul>
+            <li onclick="setPrompt('Como resolver problemas de porcentagem com aumento e desconto?')">Porcentagem com aumento e desconto</li>
+            <li onclick="setPrompt('Me ajuda com regra de três simples e composta?')">Regra de três</li>
+            <li onclick="setPrompt('Tem alguma dica para interpretar gráficos e tabelas?')">Gráficos e tabelas</li>
+            <li onclick="setPrompt('Como aplicar o Teorema de Pitágoras?')">Teorema de Pitágoras</li>
+        </ul>
+    </div>
+    <div class="chat-container">
+        <h1>🤖 Matemática com Ítalo</h1>
+        <textarea id="userInput" placeholder="Digite sua dúvida..."></textarea>
+        <button onclick="sendMessage()">Enviar</button>
+        <pre id="responseBox"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
